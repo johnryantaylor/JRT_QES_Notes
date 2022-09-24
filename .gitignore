@@ -1,3 +1,6 @@
 # Raw lecture material
 material/
 /book/_build
+
+# Dev env
+.idea/

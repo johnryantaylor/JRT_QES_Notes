@@ -1,10 +1,24 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: test
+parts:
+  - caption: Earth's Energy
+    chapters:
+    - file: earth_energy/l2/l2
+    - file: earth_energy/l3/l3
+  - caption: Rivers & Flooding
+    chapters:
+    - file: rivers/introduction/introduction
+    - file: rivers/l13/l13
+    - file: rivers/l14/l14
+  - caption: Atmosphere
+    chapters:
+    - file: atmosphere/introduction/introduction
+    - file: atmosphere/l19/l19
+    - file: atmosphere/l20/l20
+    - file: atmosphere/l21/l21
+  - caption: Aerosols
+    chapters:
+    - file: aerosols/introduction/introduction
+    - file: aerosols/l22/l22
+    - file: aerosols/l23/l23
+    - file: aerosols/l24/l24

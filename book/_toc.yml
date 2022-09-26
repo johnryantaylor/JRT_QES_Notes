@@ -1,24 +1,21 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Earth's Energy
+  - caption: Course introduction and Groundwater Hydrology
     chapters:
     - file: earth_energy/l2/l2
     - file: earth_energy/l3/l3
-  - caption: Rivers & Flooding
+  - caption: Floods and Flooding Risk
     chapters:
     - file: rivers/introduction/introduction
     - file: rivers/l13/l13
     - file: rivers/l14/l14
-  - caption: Atmosphere
+  - caption: Air Pollution and the Chemistry of our Atmosphere
     chapters:
     - file: atmosphere/introduction/introduction
     - file: atmosphere/l19/l19
     - file: atmosphere/l20/l20
     - file: atmosphere/l21/l21
-  - caption: Aerosols
-    chapters:
-    - file: aerosols/introduction/introduction
-    - file: aerosols/l22/l22
-    - file: aerosols/l23/l23
-    - file: aerosols/l24/l24
+    - file: atmosphere/l22/l22
+    - file: atmosphere/l23/l23
+    - file: atmosphere/l24/l24

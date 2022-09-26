@@ -4,3 +4,9 @@ material/
 
 # Dev env
 .idea/
+
+# OSX
+.DS_STORE
+
+# Build files
+._*.md

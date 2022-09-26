@@ -10,3 +10,6 @@ material/
 
 # Build files
 ._*.md
+._*.png
+._*.jpg
+._*.tif

@@ -36,3 +36,4 @@ sphinx:
         load: ['[tex]/physics']
       tex:
         packages: ['base', 'physics']
+    language: en

@@ -33,7 +33,7 @@ sphinx:
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     mathjax3_config:
       loader:
-        load: ['[tex]/physics']
+        load: ['[tex]/physics', '[tex]/ams']
       tex:
-        packages: ['base', 'physics']
+        packages: ['base', 'physics', 'ams']
     language: en

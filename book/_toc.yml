@@ -5,6 +5,8 @@ parts:
     chapters:
     - file: earth_energy/l2/l2
     - file: earth_energy/l3/l3
+    - file: earth_energy/l4/l4
+    - file: earth_energy/l5/l5
   - caption: Floods and Flooding Risk
     chapters:
     - file: rivers/introduction/introduction

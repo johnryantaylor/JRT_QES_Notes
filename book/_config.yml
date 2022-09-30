@@ -1,6 +1,6 @@
 title: Quantitative Environmental Science
 author: the QES Committee
-logo: logo.jpg
+logo: logo.png
 
 # Force re-execution of notebooks on each build.
 execute:

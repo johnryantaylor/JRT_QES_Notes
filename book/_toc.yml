@@ -7,6 +7,14 @@ parts:
     - file: 1-6_earth_energy/l3/l3
     - file: 1-6_earth_energy/l4/l4
     - file: 1-6_earth_energy/l5/l5
+  - caption: The Cryosphere and the making and melting of ice
+    chapters:
+      - file: 7-12_cryosphere/l7/l7
+      - file: 7-12_cryosphere/l8/l8
+      - file: 7-12_cryosphere/l9/l9
+      - file: 7-12_cryosphere/l10/l10
+      - file: 7-12_cryosphere/l11/l11
+      - file: 7-12_cryosphere/l12/l12
   - caption: Floods and Flooding Risk
     chapters:
     - file: 13-18_rivers/introduction/introduction

@@ -29,3 +29,6 @@ parts:
     - file: 19-24_atmosphere/l22/l22
     - file: 19-24_atmosphere/l23/l23
     - file: 19-24_atmosphere/l24/l24
+  - caption: Reference
+    chapters:
+    - file: reference/glossary

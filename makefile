@@ -4,4 +4,4 @@ html:
 	jupyter-book build book
 
 pdf:
-	jupyter-book build book --builder pdflatex
+	jupyter-book build book --builder pdfhtml

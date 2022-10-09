@@ -1,5 +1,10 @@
 # Known Issues
 
+## All chapters
+
+- sub-headings
+- key outcomes
+
 ## L3
 
 Figure:box_model - k(f(n)) is incorrect? or text referring to k(n) is incorrect

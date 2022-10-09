@@ -21,20 +21,17 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m venv ~/py3
-        source ~/py3/bin/activate
-        git clone https://github.com/Quantitative-Environmental-Science/Notes
+        pwd
+        ls
         pip install -r requirements.txt
-        ipython kernel install --name "py3" --user
     # Build the book
-    - name: Build the book
-      run: |
-        source ~/py3/bin/activate
-        cd Notes
-        make html
-    # Push the book's HTML to github-pages
-    - name: Push to github-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
+    # - name: Build the book
+    #   run: |
+    #     source ~/py3/bin/activate
+    #     jupyter-book build.
+    # # Push the book's HTML to github-pages
+    # - name: Push to github-pages
+    #   uses: peaceiris/actions-gh-pages@v3.6.1
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./_build/html

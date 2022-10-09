@@ -1,34 +1,38 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Course introduction and Groundwater Hydrology
+  - caption: Earth's Energy Balance
     chapters:
-    - file: 1-6_earth_energy/l2/l2
-    - file: 1-6_earth_energy/l3/l3
-    - file: 1-6_earth_energy/l4/l4
-    - file: 1-6_earth_energy/l5/l5
+    - file: 00_energybalance/l2/l2
+    - file: 00_energybalance/l3/l3
+    
+  - caption: Groundwater Hydrology
+    chapters:
+    - file: 01_groundwater/l4/l4
+    - file: 01_groundwater/l5/l5
+    - file: 01_groundwater/l6/l6
+    - file: 01_groundwater/l7/l7
   - caption: The Cryosphere and the making and melting of ice
     chapters:
-      - file: 7-12_cryosphere/l7/l7
-      - file: 7-12_cryosphere/l8/l8
-      - file: 7-12_cryosphere/l9/l9
-      - file: 7-12_cryosphere/l10/l10
-      - file: 7-12_cryosphere/l11/l11
-      - file: 7-12_cryosphere/l12/l12
+      - file: 02_cryosphere/l8/l8
+      - file: 02_cryosphere/l9/l9
+      - file: 02_cryosphere/l10/l10
+      - file: 02_cryosphere/l11/l11
+      - file: 02_cryosphere/l12/l12
   - caption: Floods and Flooding Risk
     chapters:
-    - file: 13-18_rivers/introduction/introduction
-    - file: 13-18_rivers/l13/l13
-    - file: 13-18_rivers/l14/l14
+    - file: 03_rivers/introduction/introduction
+    - file: 03_rivers/l13/l13
+    - file: 03_rivers/l14/l14
   - caption: Air Pollution and the Chemistry of our Atmosphere
     chapters:
-    - file: 19-24_atmosphere/introduction/introduction
-    - file: 19-24_atmosphere/l19/l19
-    - file: 19-24_atmosphere/l20/l20
-    - file: 19-24_atmosphere/l21/l21
-    - file: 19-24_atmosphere/l22/l22
-    - file: 19-24_atmosphere/l23/l23
-    - file: 19-24_atmosphere/l24/l24
+    - file: 04_atmosphere/introduction/introduction
+    - file: 04_atmosphere/l19/l19
+    - file: 04_atmosphere/l20/l20
+    - file: 04_atmosphere/l21/l21
+    - file: 04_atmosphere/l22/l22
+    - file: 04_atmosphere/l23/l23
+    - file: 04_atmosphere/l24/l24
   - caption: Reference
     chapters:
     - file: reference/glossary

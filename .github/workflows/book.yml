@@ -25,13 +25,12 @@ jobs:
         ls
         pip install -r requirements.txt
     # Build the book
-    # - name: Build the book
-    #   run: |
-    #     source ~/py3/bin/activate
-    #     jupyter-book build.
-    # # Push the book's HTML to github-pages
-    # - name: Push to github-pages
-    #   uses: peaceiris/actions-gh-pages@v3.6.1
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #     publish_dir: ./_build/html
+    - name: Build the book
+      run: |
+        jupyter-book build book
+    # Push the book's HTML to github-pages
+    - name: Push to github-pages
+      uses: peaceiris/actions-gh-pages@v3.6.1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./book/_build/html

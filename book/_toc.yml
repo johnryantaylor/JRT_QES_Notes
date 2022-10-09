@@ -8,6 +8,7 @@ parts:
     
   - caption: Groundwater Hydrology
     chapters:
+    - file: 01_groundwater/intro/intro
     - file: 01_groundwater/l4/l4
     - file: 01_groundwater/l5/l5
     - file: 01_groundwater/l6/l6
@@ -21,12 +22,12 @@ parts:
       - file: 02_cryosphere/l12/l12
   - caption: Floods and Flooding Risk
     chapters:
-    - file: 03_rivers/introduction/introduction
+    - file: 03_rivers/intro/intro
     - file: 03_rivers/l13/l13
     - file: 03_rivers/l14/l14
   - caption: Air Pollution and the Chemistry of our Atmosphere
     chapters:
-    - file: 04_atmosphere/introduction/introduction
+    - file: 04_atmosphere/intro/intro
     - file: 04_atmosphere/l19/l19
     - file: 04_atmosphere/l20/l20
     - file: 04_atmosphere/l21/l21

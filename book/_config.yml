@@ -35,11 +35,8 @@ sphinx:
     language: en
     latex_elements:
       preamble: |
-        \usepackage{wasysym}
-        \usepackage{dsfont}
-        \usepackage{mathrsfs}
-        \usepackage{unicode-math}
-        \usepackage{physics}
         \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
-  extra_extensions:
-  - sphinx_jupyterbook_latex
+        \newcommand{\qty}[1]{#1}
+        \newcommand{\dd}{\mathrm{d}}
+      pointsize: 11pt
+      papersize: a4paper

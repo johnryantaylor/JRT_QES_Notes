@@ -23,16 +23,18 @@ repository:
 
 html:
   favicon: favicon.png
+  home_page_in_navbar: false
+  navbar_number_sections: true
 
 sphinx:
   config:
+    language: en
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     mathjax3_config:
       loader:
         load: ['[tex]/physics', '[tex]/ams']
       tex:
         packages: ['base', 'physics', 'ams']
-    language: en
     latex_elements:
       preamble: |
         \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
@@ -41,3 +43,4 @@ sphinx:
         \makeatletter \renewcommand{\@chapapp}{Lecture} \makeatother  % change 'Chapter' to 'Lecture'
       pointsize: 11pt
       papersize: a4paper
+    latex_logo: ./logo.png

@@ -1,4 +1,4 @@
-# Introduction to Air Pollution and the Chemistry of our Atmosphere
+# Air Pollution and Atmospheric Chemistry
 
 (l19)=
 ## Lecture 19 – An overview of the atmosphere

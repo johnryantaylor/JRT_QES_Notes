@@ -1,4 +1,4 @@
-# Introduction to Flooding and Flood Risk
+# Flooding and Flood Risk
 
 In this series of lectures we will develop a series of models for the dynamics of surface water and its drainage.
 We will explore a series of simple models to elucidate the controls on the capacity of the drainage system; in cases where this is exceeded floods develop. There are a series of different types of flooding, ranging from fluvial flooding from rivers, pluvial flooding over the land, and then coastal flooding associated with sea level rise and storm surge.

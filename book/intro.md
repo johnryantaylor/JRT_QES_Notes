@@ -7,29 +7,18 @@ Select an item from the menu on the left or the grid below to get started.
 :gutter: 3
 
 :::{grid-item-card}
-:link: 00_intro/l1/l1
+:link: 00_intro/intro/intro
 :link-type: doc
 :class-header: bg-light
 
 Course Overview 🧭
 ^^^
 
-Information about the course and assessment
-:::
-
-:::{grid-item-card}
-:link: 00_intro/l2/l2
-:link-type: doc
-:class-header: bg-light
-
-Global Context 🌍
-^^^
-
 The global context of Environmental Sciences
 :::
 
 :::{grid-item-card}
-:link: 01_groundwater/l4/l4
+:link: 01_groundwater/intro/intro
 :link-type: doc
 :class-header: bg-light
 
@@ -40,7 +29,7 @@ How water flows through the Earth.
 :::
 
 :::{grid-item-card}
-:link: 02_cryosphere/l8/l8
+:link: 02_cryosphere/intro/intro
 :link-type: doc
 :class-header: bg-light
 
@@ -51,7 +40,7 @@ How ice forms, moves and melts.
 :::
 
 :::{grid-item-card}
-:link: 03_rivers/l13/l13
+:link: 03_rivers/intro/intro
 :link-type: doc
 :class-header: bg-light
 
@@ -62,7 +51,7 @@ How water flows on the surface.
 :::
 
 :::{grid-item-card}
-:link: 04_atmosphere/l19/l19
+:link: 04_atmosphere/intro/intro
 :link-type: doc
 :class-header: bg-light
 
@@ -70,6 +59,72 @@ Atmosphere 💨
 ^^^
 
 Movement, pollution and aerosols.
+:::
+
+:::{grid-item-card}
+:link: 05_globalenvironment/intro/intro
+:link-type: doc
+:class-header: bg-light
+
+The Global Environment 🌍
+^^^
+
+Fluids on a rotating planet
+:::
+
+:::{grid-item-card}
+:link: 06_oceancarbon/intro/intro
+:link-type: doc
+:class-header: bg-light
+
+Ocean Carbon 🌊
+^^^
+
+How carbon moves around the ocean
+:::
+
+:::{grid-item-card}
+:link: 07_landcarbon/intro/intro
+:link-type: doc
+:class-header: bg-light
+
+Terrestrial Carbon 🌲
+^^^
+
+Carbon on land
+:::
+
+:::{grid-item-card}
+:link: 08_polarcasestudy/intro/intro
+:link-type: doc
+:class-header: bg-light
+
+Polar Case Study 🐧
+^^^
+
+Land-ocean-atmosphere-ice interactions
+:::
+
+:::{grid-item-card}
+:link: 09_globalclimate/intro/intro
+:link-type: doc
+:class-header: bg-light
+
+Global Climate 🌍
+^^^
+
+Climate change, IPCC and policy
+:::
+
+:::{grid-item-card}
+:link: 10_energytransitions/intro/intro
+:link-type: doc
+:class-header: bg-light
+
+Energy Transitions 🏭
+^^^
+
+Towards a sustainable future
 :::
 
 ::::

@@ -1,5 +1,3 @@
-<br><div style="page-break-before:always;"></div>
-
 # Glossary
 
 A list of terms used in the QES course.

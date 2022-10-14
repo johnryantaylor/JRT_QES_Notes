@@ -1,2 +1,5 @@
 # Energy Transitions
 
+
+```{tableofcontents}
+```

@@ -39,8 +39,7 @@ sphinx:
       preamble: |
         \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
         \newcommand{\dd}{\mathrm{d}}  % replaces physics.sty \dd
-        \setcounter{chapter}{1}  % to make the chapter numbering correct (although thrown out later by intro chapters...)
-        \makeatletter \renewcommand{\@chapapp}{Lecture} \makeatother  % change 'Chapter' to 'Lecture'
+
       pointsize: 11pt
       papersize: a4paper
     latex_logo: ./logo.png

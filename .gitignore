@@ -1,5 +1,6 @@
-# Raw lecture material
+# local files for raw lecture material
 material/
+raw/
 /book/_build
 
 # Dev env

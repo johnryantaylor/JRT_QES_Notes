@@ -1,5 +1,5 @@
 <div align="right">
-<img src="https://github.com/Quantitative-Environmental-Science/Notes/actions/workflows/book.yml/badge.svg">
+<a href="https://github.com/Quantitative-Environmental-Science/Notes/actions/workflows/book.yml"><img src="https://github.com/Quantitative-Environmental-Science/Notes/actions/workflows/book.yml/badge.svg" alt="live status" height="18"></a>
 </div>
 
 # Notes

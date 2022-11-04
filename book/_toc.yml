@@ -21,9 +21,9 @@ chapters:
   - file: 02_cryosphere/l10/l10
   - file: 02_cryosphere/l11/l11
   # - file: 02_cryosphere/l12/l12
-# - file: 03_rivers/intro/intro
-#   sections:
-#   - file: 03_rivers/l13/l13
+- file: 03_rivers/intro/intro
+  sections:
+  - file: 03_rivers/l13/l13
 #   - file: 03_rivers/l14/l14
 #   - file: 03_rivers/l15/l15
 #   - file: 03_rivers/l16/l16

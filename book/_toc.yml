@@ -24,7 +24,7 @@ chapters:
 - file: 03_rivers/intro/intro
   sections:
   - file: 03_rivers/l13/l13
-#   - file: 03_rivers/l14/l14
+  - file: 03_rivers/l14/l14
 #   - file: 03_rivers/l15/l15
 #   - file: 03_rivers/l16/l16
 #   - file: 03_rivers/l17/l17

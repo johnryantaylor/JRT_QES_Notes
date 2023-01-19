@@ -5,6 +5,7 @@
 ---
 name: fig:NAME_OF_FIGURE
 figclass: margin-caption
+width: 90%
 ---
 CAPTION
 ```

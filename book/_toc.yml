@@ -40,7 +40,7 @@ chapters:
 - file: 05_globalenvironment/intro/intro
   sections:
   - file: 05_globalenvironment/l26/l26
-  # - file: 05_globalenvironment/l27/l27
+  - file: 05_globalenvironment/l27/l27
   # - file: 05_globalenvironment/l28/l28
   # - file: 05_globalenvironment/l29/l29
   # - file: 05_globalenvironment/l30/l30

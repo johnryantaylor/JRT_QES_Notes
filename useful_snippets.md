@@ -3,17 +3,21 @@
 <!-- Figure -->
 ```{figure} figures/FIGNAME.EXT
 ---
-name: NAME_OF_FIGURE
+name: fig:NAME_OF_FIGURE
 figclass: margin-caption
 ---
 CAPTION
 ```
 
+reference with {numref}`fig:NAME_OF_FIGURE`
+
 <!-- Equation -->
 ```{math}
-:label: LABEL
+:label: eq:LABEL
 LATEX_EQUATION
 ```
+
+reference with {eq}`eq:LABEL`
 
 <!-- Unit side-note -->
 ```{margin} Units!

@@ -39,7 +39,7 @@ Cryosphere 🧊
 How ice forms, moves and melts.
 :::
 
-<!-- :::{grid-item-card}
+:::{grid-item-card}
 :link: 03_rivers/intro/intro
 :link-type: doc
 :class-header: bg-light
@@ -48,9 +48,9 @@ Rivers and Flooding 🏞
 ^^^
 
 How water flows on the surface.
-::: -->
+:::
 
-<!-- :::{grid-item-card}
+:::{grid-item-card}
 :link: 04_atmosphere/intro/intro
 :link-type: doc
 :class-header: bg-light
@@ -59,21 +59,21 @@ Atmosphere 💨
 ^^^
 
 Movement, pollution and aerosols.
-::: -->
+:::
 
-<!-- :::{grid-item-card}
+:::{grid-item-card}
 :link: 05_globalenvironment/intro/intro
 :link-type: doc
 :class-header: bg-light
 
-The Global Environment 🌍
+Global Environment 🌍
 ^^^
 
 Fluids on a rotating planet
-::: -->
+:::
 
-<!-- :::{grid-item-card}
-:link: 06_oceancarbon/intro/intro
+:::{grid-item-card}
+:link: 06_oceancarbon/intro
 :link-type: doc
 :class-header: bg-light
 
@@ -81,7 +81,7 @@ Ocean Carbon 🌊
 ^^^
 
 How carbon moves around the ocean
-::: -->
+:::
 
 <!-- :::{grid-item-card}
 :link: 07_landcarbon/intro/intro

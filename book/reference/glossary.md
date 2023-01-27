@@ -66,6 +66,9 @@ Residence Time
 
 Total Alkalinity
     A conservative quantity that can be used to track the equilibrium state of weak acids in water. Calculated as the sum of the negative ions of weak acids, minus $\mathrm{[H^+]}$, this does not change as acid-base equilibria shift with temperature because it includes both the acid and base component of the system.
+    
+Reynolds Number
+    The ratio of inertial forces to viscous forces within a fluid. Fluids with a large Reynolds Numberare dominated by intertial forces, and fluids with a small Reynolds Number are dominated by viscous drag.
 
 Transmissivity
     The ability of an {term}`aquifer` to transmit groundwater throughout its entire saturated thickness.

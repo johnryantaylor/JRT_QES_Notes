@@ -8,11 +8,14 @@
 % \setbeamertemplate{sidebar canvas right}[vertical shading][top=red,bottom=blue]
 
 \definecolor{QESblue}{HTML}{8AD2ED}
-\definecolor{QESdarkblue}{HTML}{4791aa}
-\definecolor{QESlightblue}{HTML}{beedfe}
+\definecolor{QESdarkblue}{HTML}{187ca2}
+\definecolor{QESlightblue}{HTML}{c4e8f6}
 
 \setbeamercolor{sidebar}{bg=QESlightblue}
 \setbeamercolor{titlelike}{fg=QESdarkblue}
+
+\setbeamercolor{palette sidebar secondary}{fg=QESdarkblue}
+\setbeamercolor{title in sidebar}{fg=QESdarkblue}
 
 % \addtobeamertemplate{sidebar left}{}{\vfill \hspace{.006\paperwidth} \includegraphics[width=.08\paperwidth]{../../../logo.png} \vspace{.006\paperwidth} } 
 \addtobeamertemplate{sidebar left}{}{\vfill \hspace{.00001\paperwidth} \includegraphics[width=.093\paperwidth]{../../figures/qes-qr.png} \vspace{.003\paperwidth} } 
@@ -29,6 +32,7 @@
 \usepackage{upgreek}
 
 \setbeamerfont{frametitle}{series=\bfseries, size=\Large}
+\setbeamerfont{title in sidebar}{series=\bfseries, size=\small}
 \setbeamertemplate{caption}{\it\raggedright\insertcaption\par}
 
 %---------------------------
@@ -106,11 +110,6 @@
         \manualtext{71\% of Earth SA}{0.34\linewidth}{-0.22\textheight}
         \manualtext{3.7 km deep}{0.34\linewidth}{-0.27\textheight}
         \manualtext{$1.4 \times 10^{21}~kg$}{0.34\linewidth}{-0.32\textheight}
-    }
-
-    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
-    \only<2>{
-        \slidereference{Sarmiento \& Gruber (2006)}
     }
 
 \end{frame}
@@ -195,9 +194,14 @@
         \slidereference{Sarmiento \& Gruber (2006)}
     }
 
-    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{ocean-circulation.png}
+    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
+    \only<2>{
+        \slidereference{Sarmiento \& Gruber (2006)}
+    }
 
-    \includegraphics<3>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon_components.png}
+    \includegraphics<3>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{ocean-circulation.png}
+
+    \includegraphics<4>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon_components.png}
 
 \end{frame}
 
@@ -211,14 +215,20 @@
 
 \end{frame}
 
-\section{Model Construction}
+\section{Modelling Ocean Carbon}
 
 \begin{frame}{Modelling Ocean Carbon}
     \centering
 
-    \includegraphics<1>[width=0.8\linewidth, totalheight=0.75\textheight, keepaspectratio]{stommel_box.png}
+    \only<1>{
+        In \textbf{Practicals 13-16}, you will be making a model of carbon in the ocean. \\
+        ~ \\
+        \Large \textbf{How should we approach this?}
+    }
 
-    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{ocean-circulation.png}
+    \includegraphics<2>[width=0.8\linewidth, totalheight=0.75\textheight, keepaspectratio]{stommel_box.png}
+
+    \includegraphics<3>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{ocean-circulation.png}
 
 \end{frame}
 
@@ -230,10 +240,20 @@
 \end{frame}
 
 \begin{frame}{3-Box Model}
-    \includegraphics<1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{Ocean_3box.png}
+    \begin{columns}
+        \begin{column}{0.6\linewidth}
+            \includegraphics<1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{Ocean_3box.png}
+        \end{column}   
+        \begin{column}{0.3\linewidth}
+            You will begin building this model in Practical 13.
+        \end{column} 
+    \end{columns}
+    
+
 \end{frame}
 
 \begin{frame}{Conservative Transport}
+    A \textbf{conservative} quantity is neither created nor destroyed. The total amount in the system remains constant, although model processes can partition it unevenly between boxes. For our model:
     \begin{align*}
     \dv{C_L}{t} &= \frac{q}{V_L} (C_D - C_L) - \frac{1}{\tau^{mix}_L} ( C_L - C_D ) \\
     \dv{C_H}{t} &= \frac{q}{V_H} (C_L - C_H) - \frac{1}{\tau^{mix}_H} ( C_H - C_D ) \\

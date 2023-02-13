@@ -99,6 +99,26 @@
 
 \end{frame}
 
+\begin{frame}{Next five lectures...}
+
+\textbf{Lectures}: Carbon in the ocean and the processes affecting it.
+
+\begin{itemize}
+    \item Concepts, turning concepts into equations. 
+    \item Maths note: these equations will get too complex to solve analytically, we will be algebra \textsuperscript{LIGHT}.
+\end{itemize}
+
+\bigskip
+
+\textbf{Practicals}: Modelling carbon in the ocean.
+
+\begin{itemize}
+    \item Will parallel lectures
+    \item Coding up equations in lectures to make a model of carbon in the ocean.
+\end{itemize}
+
+\end{frame}
+
 \section{Inventory}
 
 \begin{frame}{Ocean \& Atmosphere}
@@ -169,10 +189,16 @@
 
 \begin{frame}{Steady State?}
     \centering
-    \includegraphics[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon_1box.png}
+    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon_1box.png}
+
+    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
+    \only<2>{
+        \slidereference{Sarmiento \& Gruber (2006)}
+    }
+
 \end{frame}
 
-\begin{frame}{Steady State?}
+\begin{frame}{Equilibrium?}
     The atmosphere is not in equilibrium with the \textbf{average} ocean.
 
     \begin{itemize}
@@ -187,15 +213,12 @@
 
 \begin{frame}{Ocean Structure}
     \centering
+    
+    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{marshall-speer.png}
 
-    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
-    \only<1>{
-        \manualtext{\rotatebox{90}{$\mathrm{\upmu mol~kg^{-1}}$}}{0.52\linewidth}{-0.6}
-        \slidereference{Sarmiento \& Gruber (2006)}
-    }
-
-    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
+    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
     \only<2>{
+        \manualtext{\rotatebox{90}{$\mathrm{\upmu mol~kg^{-1}}$}}{0.52\linewidth}{-0.6}
         \slidereference{Sarmiento \& Gruber (2006)}
     }
 

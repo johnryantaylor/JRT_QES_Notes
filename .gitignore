@@ -14,3 +14,6 @@ raw/
 ._*.png
 ._*.jpg
 ._*.tif
+
+# ignore PDF build directory
+**/pdf/*

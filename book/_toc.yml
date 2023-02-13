@@ -48,13 +48,13 @@ chapters:
   - file: 05_globalenvironment/l32/l32
   - file: 05_globalenvironment/l33/l33
   - file: 05_globalenvironment/l34/l34
-# - file: 06_oceancarbon/intro/intro
-#   sections:
-#   - file: 06_oceancarbon/l35/l35
-#   - file: 06_oceancarbon/l36/l36
-#   - file: 06_oceancarbon/l37/l37
-#   - file: 06_oceancarbon/l38/l38
-#   - file: 06_oceancarbon/l39/l39
+- file: 06_oceancarbon/intro
+  sections:
+  - file: 06_oceancarbon/l35
+  - file: 06_oceancarbon/l36
+  - file: 06_oceancarbon/l37
+  - file: 06_oceancarbon/l38
+  - file: 06_oceancarbon/l39
 # - file: 07_landcarbon/intro/intro
 #   sections:
 #   - file: 07_landcarbon/l40/l40
@@ -82,3 +82,4 @@ chapters:
 #   - file: 10_energytransitions/l56/l56
 #   - file: 10_energytransitions/l57/l57
 - file: reference/glossary
+# - file: reference/symbols

@@ -1,102 +1,16 @@
-\documentclass[aspectratio=169]{beamer}
-
-%---------------------------
-%       Set Theme and Colors
-%---------------------------
-
-\usetheme[width=.1\paperwidth]{Hannover}
-% \setbeamertemplate{sidebar canvas right}[vertical shading][top=red,bottom=blue]
-
-\definecolor{QESblue}{HTML}{8AD2ED}
-\definecolor{QESdarkblue}{HTML}{187ca2}
-\definecolor{QESlightblue}{HTML}{c4e8f6}
-
-\setbeamercolor{sidebar}{bg=QESlightblue}
-\setbeamercolor{titlelike}{fg=QESdarkblue}
-
-\setbeamercolor{palette sidebar secondary}{fg=QESdarkblue}
-\setbeamercolor{title in sidebar}{fg=QESdarkblue}
-
-% \addtobeamertemplate{sidebar left}{}{\vfill \hspace{.006\paperwidth} \includegraphics[width=.08\paperwidth]{../../../logo.png} \vspace{.006\paperwidth} } 
-\addtobeamertemplate{sidebar left}{}{\vfill \hspace{.00001\paperwidth} \includegraphics[width=.093\paperwidth]{../../figures/qes-qr.png} \vspace{.003\paperwidth} } 
-
-% \setbeamertemplate{sidebar left}{\vfill \includegraphics[width=.1\paperwidth]{../../../logo.png}} 
-
-
-%---------------------------
-%       Set Fonts
-%---------------------------
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{sansmathfonts}
-\usepackage{upgreek}
-
-\setbeamerfont{frametitle}{series=\bfseries, size=\Large}
-\setbeamerfont{title in sidebar}{series=\bfseries, size=\small}
-\setbeamertemplate{caption}{\it\raggedright\insertcaption\par}
-
-%---------------------------
-%       Math font packages
-%---------------------------
-\usepackage{dsfont, amsmath, amsthm}
-\usepackage{bbm, bm}
-\usepackage[T1]{fontenc}
-\usepackage[version=3]{mhchem}
-
-%---------------------------
-%       Figure packages
-%---------------------------
-\usepackage{graphicx}
-\graphicspath{{../../figures/}}
-
-\usepackage{epstopdf}
-\usepackage{color}
-
-\setbeamerfont{caption}{size=\footnotesize}
-
-\usepackage{subfigure}
-
-%---------------------------
-%       Manual placement packages
-%---------------------------
-\usepackage{tikz}
-\usetikzlibrary{calc}
-
-%---------------------------
-%       Local Macros
-%---------------------------
-
-\newcommand{\manualpic}[4]{
-    % inputs {filename}{figure options}{x offset}{y offset}
-    \tikz[remember picture, overlay] \node[anchor=center] at ($(current page.center)+(#3,#4)$) {\includegraphics[#2]{#1}};
-}
-
-\newcommand{\manualtext}[3]{
-    % inputs {text}{x offset}{y offset}
-    \tikz[remember picture, overlay] \node[anchor=center] at ($(current page.center)+(#2,#3)$) {#1};
-}
-
-\newcommand{\manualtextleft}[3]{
-    % inputs {text}{x offset}{y offset}
-    \tikz[remember picture, overlay] \node[anchor=west] at ($(current page.center)+(#2,#3)$) {#1};
-}
-
-\newcommand{\slidereference}[1]{
-    \manualtextleft{\tiny #1}{-0.47\linewidth}{-0.47\textheight}
-}
-
-\newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\input{preamble.tex}
 
 \title{Ocean Carbon}
+\author{1/5}
 
 \begin{document}
 
 \begin{frame}{How much carbon is in the ocean?}
     \textbf{Oscar Branson} \\ 
-    ~\\
+    \bigskip
     \href{mailto:ob266@cam.ac.uk}{ob266@cam.ac.uk} \\
-    Earth Sciences, Office M25
-
+    Earth Sciences \\
+    Office M25
 \end{frame}
 
 \begin{frame}{Next five lectures...}
@@ -241,7 +155,7 @@
     \centering
 
     \only<1>{
-        In \textbf{Practicals 13-16}, you will be making a model of carbon in the ocean. \\
+        In \textbf{Practicals 13-16} you will be making a model of carbon in the ocean. \\
         ~ \\
         \Large \textbf{How should we approach this?}
     }
@@ -255,14 +169,14 @@
 \begin{frame}{Simplification}
 
     \centering
-    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{ocean-circulation-annotated.png}
+    \includegraphics[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{ocean-circulation-annotated.png}
 
 \end{frame}
 
 \begin{frame}{3-Box Model}
     \begin{columns}
         \begin{column}{0.6\linewidth}
-            \includegraphics<1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{Ocean_3box.png}
+            \includegraphics[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{Ocean_3box.png}
         \end{column}   
         \begin{column}{0.3\linewidth}
             You will begin building this model in Practical 13.
@@ -279,6 +193,11 @@
     \dv{C_H}{t} &= \frac{q}{V_H} (C_L - C_H) - \frac{1}{\tau^{mix}_H} ( C_H - C_D ) \\
     \dv{C_D}{t} &= \frac{q}{V_D} (C_H - C_D) +  \left. \left( \frac{V_L}{\tau^{mix}_L} ( C_L - C_D ) + \frac{V_H}{\tau^{mix}_H} ( C_H - C_D ) \right) \middle/ V_D \right.
     \end{align*}
+\end{frame}
+
+\begin{frame}{Temperature \& Salinity}
+    \centering
+    \includegraphics[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-model-TS.png}
 \end{frame}
 
 \section{Global Context}

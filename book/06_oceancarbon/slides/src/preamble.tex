@@ -89,6 +89,11 @@
     \tikz[remember picture, overlay] \node[anchor=west] at ($(current page.center)+(#2,#3)$) {#1};
 }
 
+\newcommand{\manualtextright}[3]{
+    % inputs {text}{x offset}{y offset}
+    \tikz[remember picture, overlay] \node[anchor=east] at ($(current page.center)+(#2,#3)$) {#1};
+}
+
 \newcommand{\slidereference}[1]{
     \manualtextleft{\tiny #1}{-0.47\linewidth}{-0.47\textheight}
 }

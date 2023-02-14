@@ -43,3 +43,5 @@ sphinx:
       pointsize: 11pt
       papersize: a4paper
     latex_logo: ./logo.png
+
+# Look at including mhchem here - https://mhchem.github.io/MathJax-mhchem/

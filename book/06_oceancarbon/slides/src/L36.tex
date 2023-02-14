@@ -15,9 +15,9 @@
     \centering
     \slidereference{Sarmiento \& Gruber (2006)}
 
-    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
 
-    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
 
 \end{frame}
 
@@ -36,9 +36,9 @@
 \begin{frame}{\ce{CO2} dissolves in water}
     \centering
     
-    \includegraphics<1>[width=\linewidth, totalheight=0.7\textheight, keepaspectratio]{sst-month.png}
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.7\textheight, keepaspectratio]{sst-month.png}
 
-    \includegraphics<2>[width=\linewidth, totalheight=0.7\textheight, keepaspectratio]{ocean-heat-flux.png}
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.7\textheight, keepaspectratio]{ocean-heat-flux.png}
 
     \manualpic{carbon_K0.png}{width=3cm}{-0.36\linewidth}{0.39\textheight}
 
@@ -53,19 +53,19 @@
         \manualpic{carbon_K0.png}{width=3cm}{-0.36\linewidth}{0.39\textheight}
     }
 
-    \includegraphics<1>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-surface.png}
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-surface.png}
 
-    \includegraphics<2>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS.png}
+    \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS.png}
 
-    \includegraphics<3>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS-Cin.png}
+    \includegraphics<3|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS-Cin.png}
 
-    \includegraphics<4>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS-DIC.png}
+    \includegraphics<4|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS-DIC.png}
 
-    \includegraphics<5>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-solubility.png}
+    \includegraphics<5|handout:1>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-solubility.png}
 
-    \includegraphics<6>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
+    \includegraphics<6|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
 
-    \includegraphics<7>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
+    \includegraphics<7|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
 
 \end{frame}
 
@@ -104,7 +104,7 @@
 
 \end{frame}
 
-\begin{frame}{\ce{CO2} reacts with water}
+\begin{frame}<handout:0>{\ce{CO2} reacts with water}
 
     \centering
     \onslide<1->{
@@ -118,7 +118,6 @@
         \bigskip
         $ \mathrm{DIC = [CO_{2(aq)}] + [H_2CO_3] + [HCO_3^-] + [CO_3^{2-}]} $
     }
-
 
 \end{frame}
 
@@ -156,7 +155,7 @@ $ \mathrm{DIC = [CO_2^*] + [HCO_3^-] + [CO_3^{2-}]} $
     $\mathrm{HCO_3^- \xLeftrightarrow{K_2} CO_3^{2-} + H^+}$ && $K_2 = \mathrm{\frac{[H^+][CO_3^{2-}]}{[HCO_3^-]}}$ \\
 \end{tabular}
 
-\onslide<2>{
+\onslide<2|handout:0>{
     \bigskip\bigskip
     $ \mathrm{[CO_2^*] = \frac{DIC}{1 + \frac{K_1}{[H^+]} + \frac{K_1K_2}{[H^+]^2}}} $
 }
@@ -188,6 +187,116 @@ $ \mathrm{DIC = [CO_2^*] + [HCO_3^-] + [CO_3^{2-}]} $
 \end{enumerate}
 
 \end{frame}
+
+
+\begin{frame}{1. The Atmosphere}
+
+    \begin{columns}
+        \begin{column}{0.6\linewidth}
+            \includegraphics[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{Ocean_3box.png}
+        \end{column}   
+        \begin{column}{0.35\linewidth}
+            A single, compositionally uniform box that interacts with both surface boxes. \\
+            \tiny (OK approximation because the atmosphere mixes much faster than the ocean.) 
+            
+            \normalsize\bigskip
+            \begin{itemize}
+                \item $1.773 \times 10^{20}$ moles air
+                \item 400 ppm \ce{CO2}.
+            \end{itemize}
+        \end{column} 
+    \end{columns}
+    
+\end{frame}
+
+\begin{frame}{2. Ocean-Atmosphere Exchange}
+
+    Model with a characteristic timescale $\tau^{CO2}$, such that the change in the ocean is:
+
+    $$
+    \dv{DIC_{CO2,i}}{t} = - \left. \underbrace{\frac{V_i}{\tau^{CO2}_i}}_{\mathrm{m^3~yr^{-1}}} \left( \underbrace{[CO_2]_i - K_{0,i} ~ pCO_2 ~ \rho_i ~ 10^{-6}}_{\mathrm{mol~m^{-3}}} \right) \middle/ V_i \right.
+    $$
+
+    and the change in the atmosphere is:
+
+    $$
+    \dv{pCO_2}{t} = \sum_{i=L,H} \left(\frac{V_i}{\tau^{CO2}_i} \left([CO_2]_i - K_{0,i} ~ pCO_2 ~ \rho_i ~ 10^{-6} \right) \right) \times 10^{6} / n_{air}
+    $$
+
+    where $i$ are the surface boxes $L$ and $H$.
+    
+    \bigskip
+    \textbf{We need to know \ce{[CO_2^*]} in the surface ocean.}
+
+\end{frame}
+
+\begin{frame}{3. Tracking DIC Speciation}
+
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+            We need a \textbf{conservative} tracer for DIC speciation.
+            \bigskip
+        
+            The $K$ values are sensitive to temperature and salinity, which means that the total amount of \ce{H+} in the model will change in each box. \ce{[H+]} is \textbf{not conservative}, so we cannot use pH to track DIC speciation.
+            \bigskip
+        \end{column}
+
+        \onslide<2>{
+            \begin{column}{0.45\linewidth}
+                \includegraphics[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-pH-Temp.png}
+            \end{column}
+        }
+
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{3. Tracking DIC Speciation}
+
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+            \textbf{Total Alkalinity} (TA) is a conservative quantity that tracks the \textit{charge balance} of seawater. There is some more information on TA in the notes, but \textbf{\textit{you do not need to know the details of this!}}
+            \bigskip
+
+            For our purposes, it is sufficient to know that we can model it using conservative transport equations, and that:
+
+            $$
+            \ce{[CO_2^*]} = f(\mathrm{DIC, TA, T, S})
+            $$
+        \end{column}
+
+        \onslide<2>{
+            \begin{column}{0.45\linewidth}
+                \includegraphics[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-DIC-TA.png}
+            \end{column}
+        }
+
+    \end{columns}
+        
+\end{frame}
+
+\begin{frame}{4. Tracking DIC Concentration}
+
+    \begin{align*}
+        \dv{DIC_L}{t} &= [\mathrm{transport}] - \frac{1}{\tau^{CO2}_L} ([CO_2]_L - K_{0,L} ~ pCO_2 ~ \rho_L ~ 10^{-6} ) \\
+        \dv{DIC_H}{t} &= [\mathrm{transport}] - \frac{1}{\tau^{CO2}_H} ([CO_2]_H - K_{0,H} ~ pCO_2 ~ \rho_H ~ 10^{-6}) \\
+        \dv{DIC_D}{t} &= [\mathrm{transport}]        
+    \end{align*}
+    where
+    \begin{align*}
+        K_{0,i} &= f(\mathrm{T_i, S_i}) \\
+        \ce{[CO_2^*]_i} &= f(\mathrm{DIC_i, TA_i, T_i, S_i})
+    \end{align*}
+
+\end{frame}
+
+\begin{frame}{Modelling Ocean Carbon}
+
+    \centering
+    \includegraphics<1>[width=\linewidth, totalheight=0.9\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2.png}
+
+\end{frame}
+
 
 \end{document}
 

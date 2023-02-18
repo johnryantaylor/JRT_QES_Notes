@@ -29,10 +29,10 @@
 \begin{frame}{Phytoplankton}
     \centering
 
-    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{seawifs-chlorophyll.png}
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{seawifs-chlorophyll.png}
     \only<1>{\slidereference{SeaWIFS, NASA}}
 
-    \only<2>{
+    \only<2|handout:2>{
     $$
     \mathrm{\underbrace{6 CO_2}_{carbon~dioxide} + \underbrace{6 H_2O}_{water} \xrightarrow[+light]{photosynthesis} \underbrace{C_6H_{12}O_6}_{glucose} + \underbrace{6 O_2}_{oxygen}}
     $$
@@ -40,14 +40,37 @@
 
 \end{frame}
 
+\begin{frame}{Photosynthesis and pH?}
+    
+    \centering
+
+    \onslide<1-|handout:0>{
+        $$
+        \ce{CO2 + H2O} \rightleftharpoons \ce{HCO3- + H+} \rightleftharpoons \ce{CO3{2-} + H+}
+        $$
+    }
+
+    \onslide<2|handout:0>{
+        \includegraphics[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-bjerrum.png}
+    }
+
+\end{frame}
+
 \begin{frame}{Plankton}
     \centering
 
-    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-plankton.jpg}
-    \only<1>{\slidereference{Annegret Stuhr, GEOMAR}}
+    \only<1|handout:1>{\slidereference{Annegret Stuhr, GEOMAR}}
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-plankton.jpg}
 
-    \only<2>{\slidereference{@PlanktonPundit}}
-    \includegraphics<2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-plankton-foodweb.jpeg}
+    \only<2|handout:2>{\slidereference{@PlanktonPundit}}
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-plankton-foodweb.jpeg}
+
+\end{frame}
+
+\begin{frame}{Patterns of Productivity}
+    \centering
+
+    \includegraphics[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-npp.png}
 
 \end{frame}
 
@@ -115,10 +138,10 @@
 \begin{frame}{Light Limitation}
     \begin{columns}
         \begin{column}{0.7\linewidth}
-            \includegraphics[width=\linewidth, totalheight=\textheight, keepaspectratio]{carbon-biopump-light.png}
+            \includegraphics<2|handout:1>[width=\linewidth, totalheight=\textheight, keepaspectratio]{carbon-biopump-light.png}
         \end{column}
         \begin{column}{0.3\linewidth}
-            \includegraphics[width=\linewidth, totalheight=\textheight, keepaspectratio]{carbon-light-limitation.png}
+            \includegraphics<1|handout:1>[width=\linewidth, totalheight=\textheight, keepaspectratio]{carbon-light-limitation.png}
         \end{column}
     \end{columns}
 \end{frame}
@@ -132,8 +155,8 @@
 \begin{frame}{Approximating Light Limitation}
     \begin{itemize}
         \item The high latitudes are dark with a deep mixed layer depth (MLD) for part of the year.
-        \item Nutrients accumulate in the winter months, and they spend longer in the surface waters.
-        \item Nutrients have a longer lifetime ($\tau$) in the surface waters at high latitudes.
+        \item Nutrients accumulate in the winter months, when phytoplankton cannot grow.
+        \item Nutrients are removed less quickly from the surface, so have a longer lifetime ($\tau$) in high latitudes.
     \end{itemize}
 \end{frame}
 
@@ -141,11 +164,11 @@
 
 \begin{frame}{Marine Snow}
 
-    \only<1>{\slidereference{@PlanktonPundit}}
-    \includegraphics<1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-plankton-foodweb.jpeg}
+    \only<1|handout:0>{\slidereference{@PlanktonPundit}}
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-plankton-foodweb.jpeg}
 
-    \only<2|handout:0>{\slidereference{Sarmiento \& Gruber (2006)}}
-    \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-npp.png}
+    \only<2|handout:1>{\slidereference{Sarmiento \& Gruber (2006)}}
+    \includegraphics<2|handout:1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-npp.png}
 
     \only<3|handout:2>{
         \slidereference{Omand et al. (2020)}
@@ -235,23 +258,39 @@
 
 \end{frame}
 
-\begin{frame}{2. Coupling productivity and Carbon}
+\begin{frame}{2. Coupling productivity and Carbon: DIC}
 
-\begin{align*}
-    \mathrm{\dv{DIC_L}{t}} &= \mathrm{\begin{bmatrix} \mathrm{transport} \\ \mathrm{CO_2~exch.}\end{bmatrix} - 106 \frac{1}{\tau^P_L} P_L} \\
-    \mathrm{\dv{DIC_H}{t}} &= \mathrm{\begin{bmatrix} \mathrm{transport} \\ \mathrm{CO_2~exch.}\end{bmatrix} - 106 \frac{1}{\tau^P_H} P_H} \\
-    \mathrm{\dv{DIC_D}{t}} &= \mathrm{[\mathrm{transport}] + \left. \left( 106 \frac{V_L}{\tau^P_L} P_L + 106 \frac{V_H}{\tau^P_H} P_H \right) \middle / V_D \right.}
-\end{align*}
-
-\begin{align*}
-    \mathrm{\dv{TA_L}{t}} &= \mathrm{[\mathrm{transport}] + 18 \frac{1}{\tau^P_L} P_L} \\
-    \mathrm{\dv{TA_H}{t}} &= \mathrm{[\mathrm{transport}] + 18 \frac{1}{\tau^P_H} P_H} \\
-    \mathrm{\dv{TA_D}{t}} &= \mathrm{[\mathrm{transport}] - \left. \left( 18 \frac{V_L}{\tau^P_L} P_L + 18 \frac{V_H}{\tau^P_H} P_H \right) \middle / V_D \right.}
-\end{align*}
+    \begin{align*}
+        \mathrm{\dv{DIC_L}{t}} &= \mathrm{\begin{bmatrix} \mathrm{transport} \\ \mathrm{CO_2~exch.}\end{bmatrix} - 106 \frac{1}{\tau^P_L} P_L} \\
+        \mathrm{\dv{DIC_H}{t}} &= \mathrm{\begin{bmatrix} \mathrm{transport} \\ \mathrm{CO_2~exch.}\end{bmatrix} - 106 \frac{1}{\tau^P_H} P_H} \\
+        \mathrm{\dv{DIC_D}{t}} &= \mathrm{[\mathrm{transport}] + \left. \left( 106 \frac{V_L}{\tau^P_L} P_L + 106 \frac{V_H}{\tau^P_H} P_H \right) \middle / V_D \right.}
+    \end{align*}
 
 \end{frame}
 
+\begin{frame}{2. Coupling productivity and Carbon: TA}
+    
+    \begin{align*}
+        \mathrm{\dv{TA_L}{t}} &= \mathrm{[\mathrm{transport}] + 18 \frac{1}{\tau^P_L} P_L} \\
+        \mathrm{\dv{TA_H}{t}} &= \mathrm{[\mathrm{transport}] + 18 \frac{1}{\tau^P_H} P_H} \\
+        \mathrm{\dv{TA_D}{t}} &= \mathrm{[\mathrm{transport}] - \left. \left( 18 \frac{V_L}{\tau^P_L} P_L + 18 \frac{V_H}{\tau^P_H} P_H \right) \middle / V_D \right.}
+    \end{align*}
+    
+    \end{frame}
+
+\begin{frame}{Impact of Biological Pump}
+    \centering
+
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2.png}
+    \only<1|handout:1>{$\mathrm{pCO_2} \sim 1300$}
+
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2-bio.png}
+    \only<2|handout:2>{$\mathrm{pCO_2} \sim 350$}
+    
+\end{frame}
+
 \end{document}
+
 
 
 % \begin{frame}{TITLE}

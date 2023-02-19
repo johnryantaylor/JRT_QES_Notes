@@ -11,8 +11,209 @@
         
 \end{frame}
 
+\section{Calcification}
+
+\begin{frame}{Calcification}
+    \centering
+
+    \includegraphics<1|handout:1>[totalheight=0.7\textheight, keepaspectratio]{carbon-gastropod.jpg}
+    \includegraphics<1|handout:1>[totalheight=0.7\textheight, keepaspectratio]{carbon-reef.jpg}
+
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-calcifiers.png}
+
+\end{frame}
+
+\begin{frame}{Patterns}
+    \centering
+
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-caco3-export.png}
+
+    \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-npp.png}
+
+\end{frame}
+
+\section{Carbon Chemistry}
+
+\begin{frame}{Calcification}
+
+    \centering
+
+    $$
+    \ce{CaCO3} \xrightleftharpoons[dissolution]{calcification} \ce{Ca^{2+} + CO3^{2-}}
+    $$
+
+    \onslide<2|handout:0>{
+        \includegraphics[width=\linewidth, totalheight=0.6\textheight, keepaspectratio]{carbon-bjerrum.png}
+    }
+
+\end{frame}
+
+\begin{frame}{\ce{CO3^{2-}} Uptake?}
+
+    \centering
+
+    $$
+    \ce{CaCO3} \xrightleftharpoons[dissolution]{calcification} \ce{Ca^{2+} + CO3^{2-}}
+    $$
+
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.6\textheight, keepaspectratio]{carbon-bjerrum-co3.png}
+
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.6\textheight, keepaspectratio]{carbon-calc-co2-release.png}
+
+\end{frame}
+
+\begin{frame}<handout:0>{Calcification}
+
+    \ce{CO3^{2-}} uptake by calcification...
+    \begin{itemize}
+        \item Removes DIC from the surface ocean.
+        \item Shifts DIC speciation (removes TA from the surface ocean).
+        \item Releases \ce{CO2} the atmosphere.
+    \end{itemize}
+
+    What happens at depth?
+    
+\end{frame}
+
+\section{Saturation}
+
+\begin{frame}{Saturation}
+
+    \centering
+
+    $$
+    \ce{CaCO3} \xrightleftharpoons[]{K_{sp}} \ce{Ca^{2+} + CO3^{2-}}
+    $$
+
+    \onslide<2-|handout:1>{
+        $$
+        K_{sp} = (\ce{[Ca^{2+}]}\ce{[CO3^{2-}]})_{eq}
+        $$
+    }
+
+    \onslide<3-|handout:1>{
+        $$    
+        \Omega = \frac{\ce{[Ca^{2+}]}\ce{[CO3^{2-}]}}{K_{sp}}
+        $$
+
+        Calcification when $\Omega > 1$; Dissolution when $\Omega < 1$.
+    }
+
+\end{frame}
+
+\begin{frame}{Saturation}
+
+    \centering
+
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-saturation-map.png}
+
+\end{frame}
+
+\section{Dissolution}
+
+\begin{frame}{Pressure}
+    \centering
+
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-CO3-sat.0.png}
+
+    \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-CO3-sat.1.png}
+
+    \includegraphics<3|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-CO3-sat.2.png}
+
+    \includegraphics<4|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-CO3-sat.3.png}
+
+    \includegraphics<5|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-CO3-sat.4.png}
+
+
+\end{frame}
+
+\begin{frame}{Pressure + Biological Pump}
+    \centering
+
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-CO3-sat-real.png}
+
+\end{frame}
+
+
+\section{Carbonate Pump}
+
+\begin{frame}{TA and DIC export}
+
+    \centering 
+
+    The carbonate pump moves TA and DIC in a 2:1 ratio:
+
+    \begin{align}
+        \mathrm{DIC} &= {\color{red}\mathrm{[CO_3^{2-}]}} + \mathrm{[HCO_3^-]} + \mathrm{[CO_2^*]} \\
+        \mathrm{TA} &= {\color{red}\mathrm{2[CO_3^{2-}]}} + \mathrm{[HCO_3^-]} + [\dots] - \mathrm{[H^+]} \\    
+    \end{align}
+
+    Changes both carbon concentration and \textit{speciation}.
+
+\end{frame}
+
+\subsection{Ballasting}
+
+\begin{frame}{Ballasting the Biologcial Pump}
+    \centering
+
+    \slidereference{Omand et al. (2020)}
+
+    \begin{columns}
+        \begin{column}{0.3\linewidth}
+            \includegraphics[width=\linewidth, totalheight=0.9\textheight, keepaspectratio]{carbon-particle-sinking.png}
+        \end{column}
+        \begin{column}{0.6\linewidth}
+            \begin{itemize}
+                \item Remineralisation relatively constant.
+                \item Export efficiency depends on sinking speed.
+                \item Sinking speed depends on density.
+                \item Water $\sim 1025$, organic matter $1030-1500$, calcite $2710~\mathrm{kg~m^{-3}}$.
+                \item Adding $\ce{CaCO3}$ increases particle density, sinking speed and biological pump efficiency?
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\subsection{Acidification}
+
+\begin{frame}{Acidification}
+\end{frame}
+
+\section{Modelling the Carbonate Pump}
+
+\begin{frame}{Modelling the Carbonate Pump}
+
+    \ce{CaCO3} is produced by biological activity, so export will be tied to productivity via a factor:
+
+    $$
+    f_{calc} = \frac{DIC_{CaCO3}}{DIC_{organic}}
+    $$
+
+
+
+\end{frame}
+
+\begin{frame}{Impact of Carbonate Pump}
+    \centering
+
+    \only<1|handout:0>{Solubility Pump Only}
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2.png}
+    \only<1|handout:0>{$\mathrm{pCO_2} \sim 1300$}
+
+    \only<2|handout:1>{Solubility + Biological Pumps}
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2-bio.png}
+    \only<2|handout:1>{$\mathrm{pCO_2} \sim 350$}
+    
+    \only<3|handout:2>{Solubility + Biological + Carbonate Pumps}
+    \includegraphics<3|handout:2>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2-bio-carb.png}
+    \only<3|handout:2>{$\mathrm{pCO_2} \sim 400$!}
+
+\end{frame}
+
 \end{document}
 
 
 % \begin{frame}{TITLE}
-% \end{frame}·
+% \end{frame}

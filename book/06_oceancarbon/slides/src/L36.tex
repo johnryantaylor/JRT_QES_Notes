@@ -6,6 +6,8 @@
 \begin{document}
 
 \begin{frame}{The Solubility Pump}
+    
+    \includegraphics[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{ocean-3box-CO2.png}
 
 \end{frame}
 
@@ -16,6 +18,9 @@
     \slidereference{Sarmiento \& Gruber (2006)}
 
     \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
+    \only<1|handout:1>{
+        \manualtext{\rotatebox{90}{$\mathrm{\upmu mol~kg^{-1}}$}}{0.52\linewidth}{-0.6}
+    }
 
     \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
 
@@ -53,19 +58,25 @@
         \manualpic{carbon-K0.png}{width=3cm}{-0.36\linewidth}{0.39\textheight}
     }
 
-    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-surface.png}
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-0-surface.png}
 
-    \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS.png}
+    \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-1-surface-T.png}
 
-    \includegraphics<3|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS-Cin.png}
+    \includegraphics<3|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-2-surface-T-flux.png}
 
-    \includegraphics<4|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-TS-DIC.png}
+    \includegraphics<4|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-3-surface-T-DIC.png}
 
-    \includegraphics<5|handout:1>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-solubility.png}
+    \includegraphics<5|handout:0>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-4-THC-T-DIC.png}
 
-    \includegraphics<6|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
+    \includegraphics<6|handout:1>[width=\linewidth, totalheight=0.65\textheight, keepaspectratio]{carbon-circ-5-solpump.png}
 
-    \includegraphics<7|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
+    \includegraphics<7|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-ocean-atmos.png}
+
+    \includegraphics<8|handout:0>[width=\linewidth, totalheight=0.75\textheight, keepaspectratio]{carbon-cx-dic.png}
+    \only<8|handout:0>{
+        \manualtext{\rotatebox{90}{$\mathrm{\upmu mol~kg^{-1}}$}}{0.52\linewidth}{-0.6}
+        \slidereference{Sarmiento \& Gruber (2006)}
+    }
 
 \end{frame}
 
@@ -150,14 +161,14 @@ $ \mathrm{DIC = [CO_2^*] + [HCO_3^-] + [CO_3^{2-}]} $
 \bigskip\bigskip
 
 \begin{tabular}{ccl}
-    $\mathrm{CO_2^* \xLeftrightarrow{K_1} HCO_3^- + H^+}$ && $K_1 = \mathrm{\frac{[H^+][HCO_3^-]}{[CO_2^*]}}$ \\
+    $K_1 = \mathrm{\frac{[H^+][HCO_3^-]}{[CO_2^*]}}$ && $\mathrm{CO_2^* \xLeftrightarrow{K_1} HCO_3^- + H^+}$ \\
     \bigskip && \\
-    $\mathrm{HCO_3^- \xLeftrightarrow{K_2} CO_3^{2-} + H^+}$ && $K_2 = \mathrm{\frac{[H^+][CO_3^{2-}]}{[HCO_3^-]}}$ \\
+    $K_2 = \mathrm{\frac{[H^+][CO_3^{2-}]}{[HCO_3^-]}}$ && $\mathrm{HCO_3^- \xLeftrightarrow{K_2} CO_3^{2-} + H^+}$\\
 \end{tabular}
 
 \onslide<2|handout:0>{
     \bigskip\bigskip
-    $ \mathrm{[CO_2^*] = \frac{DIC}{1 + \frac{K_1}{[H^+]} + \frac{K_1K_2}{[H^+]^2}}} $
+    $ \mathbf{\mathrm{[CO_2^*] = \frac{DIC}{1 + \frac{K_1}{[H^+]} + \frac{K_1K_2}{[H^+]^2}}}} $
 }
 
 \end{frame}
@@ -176,7 +187,7 @@ $ \mathrm{DIC = [CO_2^*] + [HCO_3^-] + [CO_3^{2-}]} $
     \begin{columns}
         \begin{column}{0.55\linewidth}
 
-            \includegraphics<1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-pCO2-DIC-30.png}
+            \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-pCO2-DIC-30.png}
 
             \includegraphics<2>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-pCO2-DIC.png}
 

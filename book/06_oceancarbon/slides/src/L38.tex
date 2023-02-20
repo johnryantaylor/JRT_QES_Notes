@@ -23,16 +23,28 @@
 
 \end{frame}
 
-\begin{frame}{Patterns}
+\begin{frame}{Production Patterns}
     \centering
 
     \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-caco3-export.png}
 
     \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-npp.png}
 
+    \slidereference{Sarmiento \& Gruber (2006)}
+
 \end{frame}
 
-\section{Carbon Chemistry}
+\begin{frame}{Active Biological Process}
+    \centering
+
+    \includegraphics[totalheight=0.58\textheight, keepaspectratio]{carbon-foram-calc-external.png}
+    \includegraphics[totalheight=0.58\textheight, keepaspectratio]{carbon-foram-calc-internal.png}
+
+    \slidereference{Toyofuku et al. (2017); De Nooijer et al. (2009)}
+
+\end{frame}
+
+\section{Chemistry}
 
 \begin{frame}{Calcification}
 
@@ -75,7 +87,7 @@
     
 \end{frame}
 
-\section{Saturation}
+\subsection{Saturation}
 
 \begin{frame}{Saturation}
 
@@ -109,7 +121,7 @@
 
 \end{frame}
 
-\section{Dissolution}
+\subsection{Dissolution}
 
 \begin{frame}{Pressure}
     \centering
@@ -134,23 +146,61 @@
 
 \end{frame}
 
+\begin{frame}{Export Patterns}
+
+    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-caco3-export.png}
+
+    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-caco3-preservation.png}
+
+    \includegraphics<3|handout:3>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-seabed-topography.png}
+
+    \slidereference{Sarmiento \& Gruber (2006)}
+
+\end{frame}
 
 \section{Carbonate Pump}
+
+\begin{frame}{The Carbonate Pump}
+
+    \centering 
+
+    Exports \ce{CO3^{2-}} from the surface ocean to the deep ocean.
+    
+    \bigskip
+    Moves TA and DIC in a 2:1 ratio:
+
+    \begin{align*}
+        \mathrm{DIC} &= {\color{red}\mathrm{[CO_3^{2-}]}} + \mathrm{[HCO_3^-]} + \mathrm{[CO_2^*]} \\
+        \mathrm{TA} &= {\color{red}\mathrm{2[CO_3^{2-}]}} + \mathrm{[HCO_3^-]} + [\dots] - \mathrm{[H^+]} \\    
+    \end{align*}
+
+    Changes both carbon concentration and \textit{speciation}.
+
+\end{frame}
+
+\begin{frame}{The Carbonate Pump}
+
+    \centering
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-circ-9-biopump-full.png}
+
+    \includegraphics<2|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-circ-10-carbpump-full.png}
+
+\end{frame}
 
 \begin{frame}{TA and DIC export}
 
     \centering 
 
-    The carbonate pump moves TA and DIC in a 2:1 ratio:
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-DIC-TA-calc.0.png}
 
-    \begin{align}
-        \mathrm{DIC} &= {\color{red}\mathrm{[CO_3^{2-}]}} + \mathrm{[HCO_3^-]} + \mathrm{[CO_2^*]} \\
-        \mathrm{TA} &= {\color{red}\mathrm{2[CO_3^{2-}]}} + \mathrm{[HCO_3^-]} + [\dots] - \mathrm{[H^+]} \\    
-    \end{align}
+    \includegraphics<2|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-DIC-TA-calc.1.png}
 
-    Changes both carbon concentration and \textit{speciation}.
+    \includegraphics<3|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-DIC-TA-calc.2.png}
+
+    \includegraphics<4|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-DIC-TA-calc.3.png}
 
 \end{frame}
+
 
 \subsection{Ballasting}
 
@@ -178,12 +228,36 @@
 
 \subsection{Acidification}
 
-\begin{frame}{Acidification}
+\begin{frame}{Ocean Acidification}
+    \centering
+
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-pCO2-pH.0.png}
+
+    \includegraphics<2|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-pCO2-pH.1.png}
 \end{frame}
 
-\section{Modelling the Carbonate Pump}
+\begin{frame}{Ocean Acidification - Feedbacks?}
+    
+    \textbf{Reduced calcification}
+    \begin{itemize}
+        \item Less \ce{CO2} released to atmosphere. \textbf{Negative Feedback}
+        \item Reduced particle density, sinking speeds and biological pump efficiency. \textbf{Positive Feedback?}
+    \end{itemize}
+\end{frame}
+
+\section{Modelling Carbonate Pump}
 
 \begin{frame}{Modelling the Carbonate Pump}
+
+    \begin{enumerate}
+        \item Parameterise the export of \ce{[CO3^{2-}]} from the surface ocean as a function of biological productivity.
+        \item Include the influence of \ce{[CO3^{2-}]} export on DIC and TA.
+    \end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{1. Parameterise \ce{CacO3} Export}
 
     \ce{CaCO3} is produced by biological activity, so export will be tied to productivity via a factor:
 
@@ -191,19 +265,44 @@
     f_{calc} = \frac{DIC_{CaCO3}}{DIC_{organic}}
     $$
 
+    The total export of \ce{[CO3^{2-}]} can then be calculated as a function of biological productivity:
 
+    $$
+    \dv{DIC_{calc, i}}{t} = \dv{\ce[CO3^{2-}]_{calc, i}}{t} = f_{calc} 106 \frac{V_i}{\tau^P_i} P_i
+    $$
 
 \end{frame}
+
+\begin{frame}{2. Impact on DIC}
+
+    \begin{align*}
+        \dv{DIC_L}{t} &= \begin{bmatrix} \mathrm{transport} \\ \mathrm{CO_2~exch.} \\ \mathrm{bio.~pump.} \end{bmatrix} - f_{calc,L} 106 \frac{1}{\tau^P_L} P_L \\
+        \dv{DIC_H}{t} &= \begin{bmatrix} \mathrm{transport} \\ \mathrm{CO_2~exch.} \\ \mathrm{bio.~pump.} \end{bmatrix} - f_{calc,H} 106 \frac{1}{\tau^P_H} P_H \\
+        \dv{DIC_D}{t} &= \begin{bmatrix} \mathrm{transport} \\ \mathrm{bio.~pump.} \end{bmatrix} + \left(f_{calc,L} 106 \frac{V_L}{\tau^P_L} P_L + f_{calc,H} 106 \frac{V_L}{\tau^P_H} P_H \right) / V_D
+    \end{align*}
+
+\end{frame}
+
+\begin{frame}{2. Impact on TA}
+
+    \begin{align*}
+        \dv{TA_L}{t} &= \begin{bmatrix} \mathrm{transport} \\ \mathrm{bio.~pump.} \end{bmatrix} - 2 f_{calc,L} 106 \frac{1}{\tau^P_L} P_L \\
+        \dv{TA_H}{t} &= \begin{bmatrix} \mathrm{transport} \\ \mathrm{bio.~pump.} \end{bmatrix} - 2 f_{calc,H} 106 \frac{1}{\tau^P_H} \\
+        \dv{TA_D}{t} &= \begin{bmatrix} \mathrm{transport} \\ \mathrm{bio.~pump.} \end{bmatrix} + \left( 2 f_{calc,L} 106 \frac{V_L}{\tau^P_L} P_L + 2 f_{calc,H} 106 \frac{V_L}{\tau^P_H} P_H \right) / V_D
+    \end{align*}
+
+\end{frame}
+
 
 \begin{frame}{Impact of Carbonate Pump}
     \centering
 
     \only<1|handout:0>{Solubility Pump Only}
-    \includegraphics<1|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2.png}
+    \includegraphics<1|handout:0>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2.png}
     \only<1|handout:0>{$\mathrm{pCO_2} \sim 1300$}
 
     \only<2|handout:1>{Solubility + Biological Pumps}
-    \includegraphics<2|handout:2>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2-bio.png}
+    \includegraphics<2|handout:1>[width=\linewidth, totalheight=0.8\textheight, keepaspectratio]{carbon-model-DIC-TA-pCO2-bio.png}
     \only<2|handout:1>{$\mathrm{pCO_2} \sim 350$}
     
     \only<3|handout:2>{Solubility + Biological + Carbonate Pumps}

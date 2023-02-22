@@ -53,8 +53,8 @@ chapters:
   - file: 06_oceancarbon/l35
   - file: 06_oceancarbon/l36
   - file: 06_oceancarbon/l37
-  # - file: 06_oceancarbon/l38
-  # - file: 06_oceancarbon/l39
+  - file: 06_oceancarbon/l38
+  - file: 06_oceancarbon/l39
 # - file: 07_landcarbon/intro/intro
 #   sections:
 #   - file: 07_landcarbon/l40/l40

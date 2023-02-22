@@ -24,6 +24,9 @@
 \setbeamercolor{title in sidebar}{fg=QESdarkblue}
 \setbeamercolor{author in sidebar}{fg=QESdarkblue}
 
+\setbeamercolor{section in sidebar}{fg=QESdarkblue}
+\setbeamercolor{subsection in sidebar}{fg=QESdarkblue}
+
 \addtobeamertemplate{sidebar left}{}{\vfill \hspace{.006\paperwidth} \includegraphics[width=.08\paperwidth]{../../../logo.png} \vspace{.006\paperwidth} } 
 % \addtobeamertemplate{sidebar left}{}{\vfill \hspace{.00001\paperwidth} \includegraphics[width=.093\paperwidth]{../../figures/qes-qr.png} \vspace{.003\paperwidth} } 
 
@@ -96,7 +99,7 @@
 }
 
 \newcommand{\slidereference}[1]{
-    \manualtextleft{\tiny #1}{-0.47\linewidth}{-0.47\textheight}
+    \manualtextleft{{\color{QESdarkblue}\tiny #1}}{-0.47\linewidth}{-0.47\textheight}
 }
 
 \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}

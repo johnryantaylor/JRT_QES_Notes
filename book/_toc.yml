@@ -74,7 +74,7 @@ chapters:
   sections:
   - file: 10_energytransitions/l49/l49
   - file: 10_energytransitions/l50/l50
-#   - file: 10_energytransitions/l51/l51
+  - file: 10_energytransitions/l51/l51
 #   - file: 10_energytransitions/l52/l52
 #   - file: 10_energytransitions/l53/l53
 #   - file: 10_energytransitions/l54/l54

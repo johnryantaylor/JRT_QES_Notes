@@ -78,7 +78,7 @@ chapters:
   - file: 10_energytransitions/l52/l52
 #   - file: 10_energytransitions/l53/l53
   - file: 10_energytransitions/l54/l54
-#   - file: 10_energytransitions/l55/l55
+  - file: 10_energytransitions/l55/l55
 #   - file: 10_energytransitions/l56/l56
 #   - file: 10_energytransitions/l57/l57
 - file: reference/glossary

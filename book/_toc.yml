@@ -61,10 +61,6 @@ chapters:
   - file: 07_landcarbon/l41/l41
   - file: 07_landcarbon/l42/l42
   - file: 07_landcarbon/l43/l43
-# - file: 08_polarcasestudy/intro/intro
-#   sections:
-#   - file: 08_polarcasestudy/l44/l44
-#   - file: 08_polarcasestudy/l45/l45
 # - file: 09_globalclimate/intro/intro
 #   sections:
 #   - file: 09_globalclimate/l46/l46
@@ -81,5 +77,9 @@ chapters:
   - file: 10_energytransitions/l55/l55
 #   - file: 10_energytransitions/l56/l56
 #   - file: 10_energytransitions/l57/l57
+- file: 08_polarcasestudy/intro/intro
+  sections:
+  - file: 08_polarcasestudy/l44/l44
+  - file: 08_polarcasestudy/l45/l45
 - file: reference/glossary
 # - file: reference/symbols

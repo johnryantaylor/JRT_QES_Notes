@@ -8,78 +8,62 @@ chapters:
   - file: 00_intro/l1/l1
   - file: 00_intro/l2/l2
   - file: 00_intro/l3/l3
-- file: 01_groundwater/intro/intro
-  sections:
-  - file: 01_groundwater/l4/l4
-  - file: 01_groundwater/l5/l5
-  - file: 01_groundwater/l6/l6
-  - file: 01_groundwater/l7/l7
-- file: 02_cryosphere/intro/intro
-  sections:
-  - file: 02_cryosphere/l8/l8
-  - file: 02_cryosphere/l9/l9
-  - file: 02_cryosphere/l10/l10
-  - file: 02_cryosphere/l11/l11
-  - file: 02_cryosphere/l12/l12
-- file: 03_rivers/intro/intro
-  sections:
-  - file: 03_rivers/l13/l13
-  - file: 03_rivers/l14/l14
-  - file: 03_rivers/l15/l15
-  - file: 03_rivers/l16/l16
-  - file: 03_rivers/l17/l17
-  - file: 03_rivers/l18/l18
-- file: 04_atmosphere/intro/intro
-  sections:
-  - file: 04_atmosphere/l19/l19
-  - file: 04_atmosphere/l20/l20
-  - file: 04_atmosphere/l21/l21
-  - file: 04_atmosphere/l22/l22
-  - file: 04_atmosphere/l23/l23
-  - file: 04_atmosphere/l24/l24
-- file: 05_globalenvironment/intro/intro
-  sections:
-  - file: 05_globalenvironment/l26/l26
-  - file: 05_globalenvironment/l27/l27
-  - file: 05_globalenvironment/l28/l28
-  - file: 05_globalenvironment/l29/l29
-  - file: 05_globalenvironment/l30/l30
-  - file: 05_globalenvironment/l31/l31
-  - file: 05_globalenvironment/l32/l32
-  - file: 05_globalenvironment/l33/l33
-  - file: 05_globalenvironment/l34/l34
-- file: 06_oceancarbon/intro
-  sections:
-  - file: 06_oceancarbon/l35
-  - file: 06_oceancarbon/l36
-  - file: 06_oceancarbon/l37
-  - file: 06_oceancarbon/l38
-  - file: 06_oceancarbon/l39
-- file: 07_landcarbon/intro/intro
-  sections:
-  - file: 07_landcarbon/l40/l40
-  - file: 07_landcarbon/l41/l41
-  - file: 07_landcarbon/l42/l42
-  - file: 07_landcarbon/l43/l43
-# - file: 08_polarcasestudy/intro/intro
+# - file: 01_groundwater/intro/intro
 #   sections:
-#   - file: 08_polarcasestudy/l44/l44
-#   - file: 08_polarcasestudy/l45/l45
-# - file: 09_globalclimate/intro/intro
+#   - file: 01_groundwater/l4/l4
+#   - file: 01_groundwater/l5/l5
+#   - file: 01_groundwater/l6/l6
+#   - file: 01_groundwater/l7/l7
+# - file: 02_cryosphere/intro/intro
 #   sections:
-#   - file: 09_globalclimate/l46/l46
-#   - file: 09_globalclimate/l47/l47
-#   - file: 09_globalclimate/l48/l48
-- file: 10_energytransitions/intro/intro
-  sections:
-  - file: 10_energytransitions/l49/l49
-  - file: 10_energytransitions/l50/l50
-#   - file: 10_energytransitions/l51/l51
-#   - file: 10_energytransitions/l52/l52
-#   - file: 10_energytransitions/l53/l53
-#   - file: 10_energytransitions/l54/l54
-#   - file: 10_energytransitions/l55/l55
-#   - file: 10_energytransitions/l56/l56
-#   - file: 10_energytransitions/l57/l57
-- file: reference/glossary
+#   - file: 02_cryosphere/l8/l8
+#   - file: 02_cryosphere/l9/l9
+#   - file: 02_cryosphere/l10/l10
+#   - file: 02_cryosphere/l11/l11
+#   - file: 02_cryosphere/l12/l12
+# - file: 03_rivers/intro/intro
+#   sections:
+#   - file: 03_rivers/l13/l13
+#   - file: 03_rivers/l14/l14
+#   - file: 03_rivers/l15/l15
+#   - file: 03_rivers/l16/l16
+#   - file: 03_rivers/l17/l17
+#   - file: 03_rivers/l18/l18
+# - file: 04_atmosphere/intro/intro
+#   sections:
+#   - file: 04_atmosphere/l19/l19
+#   - file: 04_atmosphere/l20/l20
+#   - file: 04_atmosphere/l21/l21
+#   - file: 04_atmosphere/l22/l22
+#   - file: 04_atmosphere/l23/l23
+#   - file: 04_atmosphere/l24/l24
+# - file: 05_globalenvironment/intro/intro
+#   sections:
+#   - file: 05_globalenvironment/l26/l26
+#   - file: 05_globalenvironment/l27/l27
+#   - file: 05_globalenvironment/l28/l28
+#   - file: 05_globalenvironment/l29/l29
+#   - file: 05_globalenvironment/l30/l30
+#   - file: 05_globalenvironment/l31/l31
+#   - file: 05_globalenvironment/l32/l32
+#   - file: 05_globalenvironment/l33/l33
+#   - file: 05_globalenvironment/l34/l34
+# - file: 06_oceancarbon/intro
+#   sections:
+#   - file: 06_oceancarbon/l35
+#   - file: 06_oceancarbon/l36
+#   - file: 06_oceancarbon/l37
+#   - file: 06_oceancarbon/l38
+#   - file: 06_oceancarbon/l39
+# - file: 07_landcarbon/intro/intro
+#   sections:
+#   - file: 07_landcarbon/l40/l40
+#   - file: 07_landcarbon/l41/l41
+#   - file: 07_landcarbon/l42/l42
+#   - file: 07_landcarbon/l43/l43
+# - file: 10_energytransitions/intro/intro
+#   sections:
+#   - file: 10_energytransitions/l49/l49
+#   - file: 10_energytransitions/l50/l50
+# - file: reference/glossary
 # - file: reference/symbols
